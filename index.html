@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NothingToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>NothingToDo list</header>
+
+        <div class="inputField">
+            <input type="text" placeholder="Add a new task">
+            <button><i class="fas fa-plus"></i></button>
+        </div>
+
+        <ul class="todoItems">
+            <li>Read a book 
+                <div class="btn">
+                <button class="btn-edit"><i class="fas fa-pencil-alt"></i></button> 
+                <button class="btn-delete"><i class="fas fa-trash"></i></button>
+                </div>
+            </li>
+            <li> Complete 10 katas on codewars 
+                <div class="btn">
+                <button class="btn-edit"><i class="fas fa-pencil-alt"></i></button> 
+                <button class="btn-delete"><i class="fas fa-trash"></i></button>
+               </div>
+            </li>
+        
+            <li> <div>Buy a toilet paper before lockdown </div>
+                <div class="btn">
+                <button class="btn-edit"><i class="fas fa-pencil-alt"></i></button> 
+                <button class="btn-delete"><i class="fas fa-trash"></i></button>
+                </div>
+            </li>
+        </ul>
+
+        <footer>
+            <p>You have <span class="taskNumber"> pending tasks</span></p>
+            <button>Clear all</button>
+        </footer>
+        
+    </div>
+</body>

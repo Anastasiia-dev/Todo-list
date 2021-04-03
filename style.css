@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:  linear-gradient(rgba(44, 43, 43, 0.582), rgba(44, 43, 43, 0.582)), url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 400px;
+    width: 100%;
+    min-height: 400px;
+    max-height: 1000px;
+    padding: 25px;
+    margin: 120px auto;
+    border-radius: 5px;
+    background-color: rgba(224, 218, 218, 0.884);
+    box-shadow: 0px 0px 42px -15px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.container header{
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.container .inputField{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 10px 0;
+
+}
+
+.inputField input{
+    width: 70%;
+    height: 30px;
+    margin-right: 5px;
+    border: 1px solid white;  
+    padding-left: 10px;
+    outline: none;
+}
+
+.inputField input:focus{
+    border-color:rgb(161, 201, 96);
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+}
+
+.inputField button{ 
+    background-color: white;
+    opacity: 0.6; 
+    width: 30px;
+    height: 30px;
+    
+}
+
+.inputField button:hover{
+    background-color: rgb(85, 139, 72);
+    color: white;
+}
+
+.inputField button:active{
+    opacity: 1;
+}
+
+.inputField input,
+.inputField button{
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.container .todoItems{
+    width: 100%;
+    max-height: 300px;
+    padding: 10px 0;
+}
+
+.todoItems li{
+    position: relative;
+    list-style: none;
+    border-radius: 3px;
+    background-color: #fff;
+    max-height: 70px;
+    max-width: 350px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 10px 0px 10px 15px;
+    font-size: 14px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoItems li button{
+    text-align: center;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+.todoItems li .btn{
+    position: absolute;
+    right: -100px;
+    top: 5px;
+    height: 30px;
+    width: 80px;
+    padding: 0 5px;
+    transition: all 0.2s ease-out;
+
+}
+
+.todoItems li:hover .btn{
+    right: 0px;
+}
+
+.todoItems li button.btn-edit{
+    background: rgb(85, 139, 72);
+}
+
+
+.todoItems li button.btn-delete{
+    background: #e74c3c;
+    margin-left: 2px;   
+}
+
+.todoItems li button.btn-edit:hover{
+    background-color: rgb(149, 172, 143);
+}
+
+.todoItems li button.btn-delete:hover{
+    background-color: #e2a39b;
+}
+
+.todoItems li button.btn-edit:active{
+    background-color: rgb(85, 139, 72);
+}
+
+.todoItems li button.btn-delete:active{
+    background-color: #e74c3c;
+}
+
+.container footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 10px;
+}
+
+.container footer button{
+    background-color:#e74c3c;
+    color: white;
+    width: 60px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.container footer button:hover{
+    background-color: #e2a39b;
+}
+
+.container footer button:active{
+    background-color: #e74c3c
+}
+
+
+
+
+
+
+
