@@ -14,14 +14,11 @@ body{
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
 }
 
 .container{
     max-width: 400px;
     width: 100%;
-    min-height: 400px;
-    max-height: 1000px;
     padding: 25px;
     margin: 120px auto;
     border-radius: 5px;
@@ -30,7 +27,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
 .container header{
@@ -41,7 +37,6 @@ body{
 
 .container .inputField{
     width: 100%;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,32 +65,34 @@ button{
     border-radius: 3px;
 }
 
-.inputField button{ 
-    background-color: white;
+.btn-add{ 
+    background-color: rgb(85, 139, 72);
+    color: white;
     opacity: 0.6; 
     width: 30px;
     height: 30px;
-    
+    pointer-events: none;
 }
 
-.inputField button:hover{
-    background-color: rgb(85, 139, 72);
-    color: white;
-}
-
-.inputField button:active{
+.btn-add.active{
     opacity: 1;
+    pointer-events: auto;
 }
+
+.btn-add:active{
+    opacity: 0.6;
+    background-color: rgb(85, 139, 72);
+}
+
 
 .inputField input,
-.inputField button{
+.btn-add{
     border-radius: 3px;
     transition: all 0.3s ease;
 }
 
-.container .todoItems{
+.todoItems{
     width: 100%;
-    max-height: 300px;
     padding: 10px 0;
 }
 
@@ -155,11 +152,11 @@ button{
     background-color: #e2a39b;
 }
 
-.todoItems li button.btn-edit:active{
+.todoItems li button.btn-edit.active{
     background-color: rgb(85, 139, 72);
 }
 
-.todoItems li button.btn-delete:active{
+.todoItems li button.btn-delete.active{
     background-color: #e74c3c;
 }
 
@@ -168,27 +165,27 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: auto;
     width: 100%;
     padding: 10px 0;
-    position: absolute;
-    bottom: 10px;
 }
 
-.container footer button{
-    background-color:#e74c3c;
+.btn-del-all{
+    background-color: #e2a39b;
     color: white;
     width: 60px;
     height: 30px;
     margin-top: 15px;
+    pointer-events: none;
 }
 
-.container footer button:hover{
+.btn-del-all.active{
+    background-color: #e74c3c;
+    pointer-events: auto;
+}
+
+.btn-del-all:active{
     background-color: #e2a39b;
-}
-
-.container footer button:active{
-    background-color: #e74c3c
 }
 
 
