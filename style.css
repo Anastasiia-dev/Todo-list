@@ -102,9 +102,10 @@ button{
     border-radius: 3px;
     background-color: #fff;
     max-height: 70px;
-    max-width: 350px;
-    cursor: pointer;
-    margin-bottom: 10px;
+    min-height: 40px;
+    min-width: 290px;
+    max-width: 290px;
+    pointer-events: none;
     padding: 10px 0px 10px 15px;
     font-size: 14px;
     overflow: hidden;
@@ -113,48 +114,28 @@ button{
     align-items: center;
 }
 
-.todoItems li button{
-    text-align: center;
-    color: #fff;
-    width: 30px;
-    height: 30px;
-}
-.todoItems li .btn{
-    position: absolute;
-    right: -100px;
-    top: 5px;
-    height: 30px;
-    width: 80px;
-    padding: 0 5px;
-    transition: all 0.2s ease-out;
-
+.newDivTag{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 15px 0;
 }
 
-.todoItems li:hover .btn{
-    right: 0px;
-}
-
-.todoItems li button.btn-edit{
-    background: rgb(85, 139, 72);
-}
-
-
-.todoItems li button.btn-delete{
+.btn-delete{
     background: #e74c3c;
-    margin-left: 2px;   
-}
-
-.todoItems li button.btn-edit:hover{
-    background-color: rgb(149, 172, 143);
+    color: white;
+    margin-left: 2px;
+    width: 30px;
+    height: 30px; 
+    text-align: center;  
 }
 
 .todoItems li button.btn-delete:hover{
     background-color: #e2a39b;
 }
 
-.todoItems li button.btn-edit.active{
-    background-color: rgb(85, 139, 72);
-}
 
 .todoItems li button.btn-delete.active{
     background-color: #e74c3c;
@@ -176,7 +157,6 @@ button{
     width: 60px;
     height: 30px;
     margin-top: 15px;
-    pointer-events: none;
 }
 
 .btn-del-all.active{
@@ -186,6 +166,10 @@ button{
 
 .btn-del-all:active{
     background-color: #e2a39b;
+}
+
+.newDivTag i{
+    pointer-events: none;
 }
 
 
